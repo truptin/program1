@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+    <link rel="stylesheet" href="css/style.css">
+<script src="js/app.js"></script>
+<script src="js/iscroll-lite.js"></script>
+<script type="text/javascript"></script>
+   <script >
+   $(document).ready(function(){
+   $('#tab-bar a').on('click', function(e){
+	    //e.preventDefault();
+	    var nextPage = $(e.target.hash);
+	    
+	    page(nextPage);
+	    $("#pages .current").removeClass("current");
+	    nextPage.addClass("current");
+   
+	});
+   });
+   </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Sculder</title>
+   
+</head>
+<body>
+
+
+  <header>
+    <h1>Sculder</h1>
+</header>  
+<div id="wrapper">
+    
+    <div id="main-content"> 
+
+        <div id="pages">
+    <div id="map" class="current">
+         <ul>
+        <li>Some Stuff</li>
+        <li>More Stuff</li>
+        <li>Big Stuff</li>
+        <li>Small Stuff</li>
+        <li>1 Stuff</li>
+        <li>2 Stuff</li>
+        <li>Fast Stuff</li>
+        <li>Slow Stuff</li>
+        <li>3 Stuff</li>
+        <li>4 Stuff</li>
+        <li>5 Stuff</li>
+        <li>6 stuff</li>
+        <li>7 stuff<li>
+        <li>8 stuff</li>
+        </ul>
+    </div>
+
+
+    <div id="camera" >Camera
+      
+     
+    </div>
+    <div id="twitter"  >Twiiter
+    </div>
+</div>
+
+        </div>
+    
+       
+
+ </div>
+ 
+    <footer>
+       
+    <ul id="tab-bar">
+    <li>
+        <a href="#map">Map</a>
+    </li>
+    <li>
+        <a href="#camera">Camera</a>
+    </li>
+    <li>
+        <a href="#twitter">Twitter</a>
+    </li>
+</ul>
+            </footer>
+       
+    
+</body>
+</html>
